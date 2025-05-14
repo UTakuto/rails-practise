@@ -1,24 +1,58 @@
-# README
-### ディレクトリ構成と説明文
+# 📦rails-practice
+>Dockerで動かすRuby on Railsの練習用プロジェクトです。Railsの開発環境を簡単に立ち上げられるように構成されています。
+
+<br>
+
+## 🛠使用技術・バージョン
+|項目|バージョン|
+|-----|-----|
+|Ruby|3.2.8|
+|Ruby on Rails|7.1.5.1|
+|MySQL|8|
+|Docker|最新版|
+|Docker compose|最新版|
+
+
+## 🚀 起動方法
+
+1. リポジトリをクローン
+    ```
+     git clone https://github.com/UTakuto/rails-practise.git
+    ```
+2.  Dockerでビルド＆起動
+     ```
+     docker compose build
+     docker compose up
+     ```
+3.  Railsにアクセス
+     ```
+      http://localhost:設定したport
+     ```
+
+
+
+<br>
+
+## ディレクトリ構成と説明文
 >誰でもわかりやすいように書かれています(Chat GPTより)
 ```
-rails-practice
-├── app/                 # アプリのメインのコードが入ってる（見た目・データ・動きの担当）
-├── bin/                 # アプリを動かすときに使うコマンドたち
-├── config/              # アプリのルールや設定を書くところ（ルートとか）
-├── db/                  # データベース関連（テーブルの設計図とかデータ）
-├── lib/                 # 自分で作った便利ツールを入れる場所
-├── log/                 # 動かしたときの記録（エラーとかも出る）
-├── public/              # 外から見えるファイル（画像・HTML・CSS etc...）
-├── storage/             # アップロードしたファイルが入る場所
-├── test/                # 動作確認用のテストを書く場所
-├── tmp/                 # 一時的に使うファイル置き場
-├── vendor/              # 外から持ってきたツールとかライブラリ
-├── config.ru            # サーバーに「Railsをスタート」と伝えるファイル
-├── docker-compose.yml   # Dockerの設定ファイル
-├── Dockerfile           # Dockerでアプリを作る手順書
-├── Gemfile              # 使いたいライブラリのリスト(Ruby用)
-├── Gemfile.lock         # ライブラリの正確なバージョンのメモ(Ruby用)
-├── Rakefile             # いろんな便利コマンドを登録する場所
-└── README.md
+rails-practise
+├── app                 # メインのアプリケーションロジック（MVCのView, Controllerなど）
+├── bin                 # 実行ファイル（rails コマンドなど）
+├── config              # 設定ファイル（ルーティングやDB設定）
+├── db                  # データベース関連（マイグレーションなど）
+├── lib                 # 外部モジュールやライブラリ
+├── log                 # ログファイル（.gitignoreで無視）
+├── public              # 静的ファイルを配置する場所（HTMLや画像など）
+├── storage             # ActiveStorage用（画像アップロードなど）
+├── test                # テストコード
+├── tmp                 # 一時ファイル
+├── vendor              # 外部ライブラリ（基本使わない）
+├── config.ru           # Rack起動設定ファイル（Pumaなど）
+├── docker-compose.yml  # Docker構成ファイル（MySQL、Railsの連携など）
+├── Dockerfile          # Rails用のDockerイメージ定義
+├── Gemfile             # 使用するgemの一覧（RailsやMySQLなど）
+├── Gemfile.lock        # gemの依存バージョン固定ファイル
+├── Rakefile            # タスク実行用スクリプト（rails db:migrateなど）
+└── README.md           # このファイル
 ```
