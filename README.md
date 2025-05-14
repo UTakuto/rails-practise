@@ -26,7 +26,7 @@
      ```
 3.  Railsにアクセス
      ```
-      http://localhost:設定したport
+      http://localhost:3010
      ```
 
 
