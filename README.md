@@ -1,24 +1,24 @@
 # README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### ディレクトリ構成と説明文
+>誰でもわかりやすいように書かれています(Chat GPTより)
+```
+rails-practice
+├── app/                 # アプリのメインのコードが入ってる（見た目・データ・動きの担当）
+├── bin/                 # アプリを動かすときに使うコマンドたち
+├── config/              # アプリのルールや設定を書くところ（ルートとか）
+├── db/                  # データベース関連（テーブルの設計図とかデータ）
+├── lib/                 # 自分で作った便利ツールを入れる場所
+├── log/                 # 動かしたときの記録（エラーとかも出る）
+├── public/              # 外から見えるファイル（画像・CSSとか）
+├── storage/             # アップロードしたファイルが入る場所
+├── test/                # 動作確認用のテストを書く場所
+├── tmp/                 # 一時的に使うファイル置き場
+├── vendor/              # 外から持ってきたツールとかライブラリ
+├── config.ru            # サーバーに「Railsをスタートしてね」と伝えるファイル
+├── docker-compose.yml   # Dockerの設定ファイル（いろいろ動かすまとめ役）
+├── Dockerfile           # Dockerでアプリを作る手順書
+├── Gemfile              # 使いたいライブラリのリスト
+├── Gemfile.lock         # ライブラリの正確なバージョンのメモ
+├── Rakefile             # いろんな便利コマンドを登録する場所
+└── README.md
+```
