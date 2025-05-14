@@ -9,16 +9,16 @@ rails-practice
 ├── db/                  # データベース関連（テーブルの設計図とかデータ）
 ├── lib/                 # 自分で作った便利ツールを入れる場所
 ├── log/                 # 動かしたときの記録（エラーとかも出る）
-├── public/              # 外から見えるファイル（画像・CSSとか）
+├── public/              # 外から見えるファイル（画像・HTML・CSS etc...）
 ├── storage/             # アップロードしたファイルが入る場所
 ├── test/                # 動作確認用のテストを書く場所
 ├── tmp/                 # 一時的に使うファイル置き場
 ├── vendor/              # 外から持ってきたツールとかライブラリ
-├── config.ru            # サーバーに「Railsをスタートしてね」と伝えるファイル
-├── docker-compose.yml   # Dockerの設定ファイル（いろいろ動かすまとめ役）
+├── config.ru            # サーバーに「Railsをスタート」と伝えるファイル
+├── docker-compose.yml   # Dockerの設定ファイル
 ├── Dockerfile           # Dockerでアプリを作る手順書
-├── Gemfile              # 使いたいライブラリのリスト
-├── Gemfile.lock         # ライブラリの正確なバージョンのメモ
+├── Gemfile              # 使いたいライブラリのリスト(Ruby用)
+├── Gemfile.lock         # ライブラリの正確なバージョンのメモ(Ruby用)
 ├── Rakefile             # いろんな便利コマンドを登録する場所
 └── README.md
 ```
