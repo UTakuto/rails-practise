@@ -9,8 +9,8 @@
 |Ruby|3.2.8|
 |Ruby on Rails|7.1.5.1|
 |MySQL|8|
-|Docker|最新版|
-|Docker compose|最新版|
+|Docker||
+|Docker compose||
 
 
 ## 🚀 起動方法
